@@ -2,11 +2,27 @@ Goal: to try and isolate unwanted features in MATSim networks using graph measur
 
 Currently only imports MATSim XML and exports nothing besides visualisations. Mainly using [`pydeck`](https://pydeck.gl/) for interactive network visualisation and [`momepy`](https://github.com/pysal/momepy) to compute graph measures. 
 
-+ Before using, install dependencies: 
++ Before using, create and activate a python 3.10.6 (or possibly later) virtual environment:
++ With conda: 
 
 ``` sh
-pip install matsim-tools pandas shapely numpy pydeck geopandas networkx momepy matplotlib jupyter jupyterlab
+conda create env -n graph-measures-env python=3.10.6
+conda activate graph-measures-env
 ```
+
++ (**preferred**): With [pyenv](https://formulae.brew.sh/formula/pyenv#default) & the [pyenv-virtualenv](https://formulae.brew.sh/formula/pyenv-virtualenv#default) plugin:
+
+``` sh
+pyenv virtualenv 3.10.6 graph-measures-env
+pyenv activate graph-measures-env
+```
+
++ Install the requirements: 
+
+``` sh
+pip install requirements.txt
+```
+
 
 + Then enable `pydeck` widgets:
    + If using jupyter notebook:
