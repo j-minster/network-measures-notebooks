@@ -10,9 +10,10 @@ conda create env -n graph-measures-env python=3.10.6
 conda activate graph-measures-env
 ```
 
-+ (**preferred**): With [pyenv](https://formulae.brew.sh/formula/pyenv#default) & the [pyenv-virtualenv](https://formulae.brew.sh/formula/pyenv-virtualenv#default) plugin:
++ (**preferred**): With [pyenv](https://formulae.brew.sh/formula/pyenv#default) & the [pyenv-virtualenv](https://formulae.brew.sh/formula/pyenv-virtualenv#default) plugin, noting that you can probably specify a later version of python if you want to:
 
 ``` sh
+pyenv install 3.10.6 
 pyenv virtualenv 3.10.6 graph-measures-env
 pyenv activate graph-measures-env
 ```
