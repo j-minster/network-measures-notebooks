@@ -1,3 +1,7 @@
+Goal: to try and isolate unwanted features in MATSim networks using graph measures.
+
+Currently only imports MATSim XML and exports nothing besides visualisations. Mainly using [`pydeck`](https://pydeck.gl/) for interactive network visualisation and [`momepy`](https://github.com/pysal/momepy) to compute graph measures. 
+
 + Before using, install dependencies: 
 
 ``` sh
