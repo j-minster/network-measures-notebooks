@@ -5,14 +5,14 @@ pip install matsim-tools pandas shapely numpy pydeck geopandas networkx momepy m
 ```
 
 + Then enable `pydeck` widgets:
-    + If using jupyter notebook:
+   + If using jupyter notebook:
 
 ``` sh
 jupyter nbextension install --sys-prefix --symlink --overwrite --py pydeck
 jupyter nbextension enable --sys-prefix --py pydeck
 ```
 
-    + If using jupyter lab:
+   + If using jupyter lab:
 
 ``` sh
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
